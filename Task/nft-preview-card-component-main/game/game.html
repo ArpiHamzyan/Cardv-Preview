@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="game.css">
+    <title>Insect catch game</title>
+</head>
+<body>
+    <div class="screen first"> 
+        <h1 class="catch">Catch The Insect</h1>
+        <button class="button" id="button" onclick="startPlay()">Play Game</button>
+    </div>
+
+    <div class="screen second" id="second">
+        <h1 class="favorite">What is your "favorite" insect?</h1>
+
+        <ul class="list">
+            <li>
+                <button class="bugsimages">
+                    <p>Fly</p>
+                    <img src="http://pngimg.com/uploads/fly/fly_PNG3946.png" alt="fly">
+                </button>
+            </li>
+            <li>
+                <button class="bugsimages">
+                    <p>Mosquito</p>
+                    <img src="http://pngimg.com/uploads/mosquito/mosquito_PNG18175.png" alt="mosquito">
+                </button>
+            </li>
+            <li>
+                <button class="bugsimages">
+                    <p>Spider</p>
+                    <img src="http://pngimg.com/uploads/spider/spider_PNG12.png" alt="spider">
+                </button>
+            </li>
+            <li>
+                <button class="bugsimages">
+                    <p>Roach</p>
+                    <img src="http://pngimg.com/uploads/roach/roach_PNG12163.png" alt="roach">
+                </button>
+            </li>
+            
+        </ul>
+    </div>
+
+    <div class="screen gaming third" id="gaming">
+        <h3 class="time" id="time">Time: 00:00</h3>
+        <h3 class="score" id="score">Score: 0</h3>
+        <h5 id="quit" class="quit">
+            Giving Up?
+            <br>
+            This game is hard for you!!!
+        </h5>
+
+    </div>
+
+
+</body>
+<script src="game.js"></script>
+</html>

@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: #6176f6;
+    font-family: "Press Start 2P", sans-serif;
+}
+.screen{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 20px;
+}
+.screen.up{
+    margin-top: -100vh;
+}
+.catch{
+    color: white;
+    font-size: 25px;
+}
+.button{
+    background-color: white;
+    border: 0;
+    color:#6176f6 ;
+    font-size: 10px;
+    font-family: "Press Start 2P", sans-serif;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.button:hover{
+    opacity: 0.9;
+}
+.favorite{
+    color: white;
+    font-size: 25px;
+}
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 13px;
+  list-style-type: none;
+  padding: 0;
+  
+}
+.bugsimages{
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 13px;
+}
+.bugsimages:hover{
+    background-color: white;
+    color: #6176f6 ;
+}
+.bugsimages img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.gaming{
+    position: relative;
+}
+.time{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top:20px;
+    left:20px;
+}
+.score{
+    position: absolute;
+    color:white;
+    font-size: 15px;
+    top:20px;
+    right:20px;
+}
+.quit{
+  line-height: 1.7;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  padding: 20px;
+  z-index: 100;
+  text-align: center;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  transition: transform 0.4s ease-in;
+}
+.quit.visible {
+    transform: translate(-50%, 150%);
+    opacity: 1;
+  }
+.insect {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+.insect.caught {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  
+.insect img {
+    width: 100px;
+    height: 100px;
+  }
+.second{
+    display: none;
+}
